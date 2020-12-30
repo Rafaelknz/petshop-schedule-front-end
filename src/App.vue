@@ -1,37 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="./assets/logo-00.png"
+          transition="scale-transition"
+          width="40"
+        />
+      </div>
+
+      <v-spacer></v-spacer>
+        <v-btn>PETSHOP SCHEDULE</v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <Home/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import { routes } from './routes';
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home';
 
 export default {
-
   name: 'App',
 
   components: {
-    HelloWorld
+    Home,
   },
 
-  data() {
-    return {
-      routes
-    }
-  }
-}
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

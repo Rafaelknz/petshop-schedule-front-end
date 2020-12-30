@@ -1,4 +1,4 @@
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
 export const routes = [
-    { path: '', component: HelloWorld, titulo: 'HelloWorld' }
+    { path: '', component: Home, titulo: 'Home' }
 ];

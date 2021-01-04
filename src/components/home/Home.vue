@@ -31,7 +31,7 @@
     name: 'Home',
 
     data: () => ({
-    
+
     }),
 
     created() {

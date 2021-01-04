@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col cols="12">
         <img
-          :src="require('../assets/logo-00.png')"
+          :src="require('../../assets/logo-00.png')"
           :elevation="20"
           class="my-3"
           id="mainimg"
@@ -33,6 +33,11 @@
     data: () => ({
     
     }),
+
+    created() {
+      this.$http.get('http://localhost:3000/customer-services')
+          .then(res => res.json())
+    }
   }
 </script>
 <style scoped>

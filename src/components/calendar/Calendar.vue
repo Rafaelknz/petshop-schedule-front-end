@@ -116,6 +116,7 @@ export default {
       }
 
       this.events = events
+      console.log(events);
     },
     getEventColor (event) {
       return event.color

@@ -8,7 +8,6 @@
           class="my-3"
           id="mainimg"
           contain
-          height="300"
         />
       </v-col>
 
@@ -19,8 +18,8 @@
       </v-col>
     </v-row>
     <center>
-      <v-btn color="secondary" class="black--text">
-      schedule an appointment
+      <v-btn color="secondary" class="black--text" href="/addAppointment">
+        schedule an appointment
       </v-btn>
     </center>
   </v-container>
